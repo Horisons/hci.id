@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jasa Digital Marketing | About</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal ">
+    <main id="content">
+
+        <header
+            class="w-full mx-auto flex justify-between items-center py-3 bg-gray-100 dark:bg-transparent fixed w-full z-50 border-b border-gray-300 dark:border-gray-700 dark:bg-[#121212]">
+            <div class="flex items-center pl-5">
+                <div class="Avatar">
+                    <img src="logo.png" alt="avatar"
+                        class="w-14 max-[375px]:w-10 max-[769px]:w-11 rounded-full shadow-lg" loading="lazy">
+                </div>
+                <div class="ml-2 text-gray-900 dark:text-[#fafafa]">
+                    <h1 class="font-sora font-medium max-[375px]:text-[12px] max-[600px]:text-[14px]">HCI.ID</h1>
+                    <h2 class="font-sora font-normal text-xs max-[375px]:text-[11px] max-[600px]:text-[12px]">Digital
+                        Marketing</h2>
+                </div>
+                <div><img class="w-[14px] ml-[5px] mb-[17px] max-[375px]:w-3" src="verified.png" alt="verified"
+                        loading="lazy"></div>
+            </div>
+
+            <nav id="nav-menu" class="hidden lg:flex">
+                <ul id="nav-links"
+                    class="flex items-center gap-12 text-sm font-normal text-[#121212] dark:text-[#e5e5e5]">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <div class="relative pr-5">
+                    <select id="language-toggle"
+                        class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white p-2 rounded flex items-center gap-2">
+                        <option value="en" class="bg-[url('/path/to/uk-flag.png')] bg-no-repeat pl-8">English</option>
+                        <option value="id" class="bg-[url('/path/to/id-flag.png')] bg-no-repeat pl-8">Bahasa Indonesia
+                        </option>
+                    </select>
+                </div>
+                <div class="pr-5 hidden lg:block">
+                    <input type="checkbox" class="hidden" id="dark-toggle">
+                    <label for="dark-toggle" class="cursor-pointer">
+                        <div
+                            class="flex h-6 w-11 items-center rounded-full bg-gradient-to-r from-[#ADD8E6] via-[#ADD8E6] to-[#66CCFF] p-[3px] dark:from-[#000080] dark:to-[#ADD8E6]">
+                            <div class="toggle-circle h-5 w-5 rounded-full bg-white transition-transform duration-300">
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <button aria-label="hamburger" id="hamburger" class="block lg:hidden">
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Icon at Bottom -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white lg:hidden z-50">
+            <div class="flex justify-around items-center h-16">
+                <a href="/" aria-label="home" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l9-9m0 0l9 9m-9-9v18" />
+                    </svg>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a href="about.html" aria-label="about" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5.121 19.121a4 4 0 010-5.656L12 6.586l6.879 6.879a4 4 0 010 5.656A4 4 0 0116 21H8a4 4 0 01-2.879-1.879z" />
+                    </svg>
+                    <span class="text-xs">About</span>
+                </a>
+                <a href="service.html" aria-label="service" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9.75 17.25a5.75 5.75 0 104.5 0" />
+                    </svg>
+                    <span class="text-xs">Service</span>
+                </a>
+                <a href="project.html" aria-label="project" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    <span class="text-xs">Project</span>
+                </a>
+                <a href="contact.html" aria-label="contact" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12a9 9 0 11-9-9 9 9 0 019 9z" />
+                    </svg>
+                    <span class="text-xs">Contact</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Full Width Card with ABOUT US -->
+        <div class="flex items-center justify-center w-full h-80 bg-yellow-500 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-75"></div>
+            <div
+                class="absolute top-0 left-0 w-32 h-32 bg-yellow-700 rounded-full transform -translate-x-1/2 -translate-y-1/2 opacity-30">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-40 h-40 bg-yellow-700 rounded-full transform translate-x-1/2 translate-y-1/2 opacity-30">
+            </div>
+            <h2 class="relative text-4xl font-bold text-center text-white z-10">CONTACT</h2>
+
+            <!-- Additional Decorative Elements -->
+            <div
+                class="absolute top-0 right-0 w-24 h-24 bg-yellow-600 rounded-full transform translate-x-1/4 -translate-y-1/4 opacity-20">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-24 h-24 bg-yellow-600 rounded-full transform -translate-x-1/4 translate-y-1/4 opacity-20">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 w-48 h-48 bg-white rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div class="absolute top-1/4 right-1/4 w-16 h-16 bg-yellow-800 rounded-full transform rotate-45 opacity-25">
+            </div>
+
+            <!-- Star Decorations -->
+            <div class="absolute top-8 left-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute top-8 right-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute bottom-8 left-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute bottom-8 right-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <main class="container mx-auto px-4 py-16">
+            <section>
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-semibold mb-4 border-b-4 border-yellow-600 inline-block pb-2">Informasi
+                        Kontak</h2>
+                    <p class="text-lg text-gray-600">Hubungi kami melalui cara-cara berikut:</p>
+                </div>
+                <div class="flex flex-wrap -mx-4 justify-center">
+                    <!-- Contact Card 1 -->
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div
+                            class="bg-white shadow-xl rounded-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-200">
+                            <svg class="w-12 h-12 text-yellow-600 mb-4 mx-auto" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 3a1 1 0 011-1h12a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V3zm2 0v14h12V3H5zm1 1h10v12H6V4z">
+                                </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Alamat</h3>
+                            <p class="text-gray-600">Jalan Raya No. 123, Kota Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                    <!-- Contact Card 2 -->
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div
+                            class="bg-white shadow-xl rounded-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-200">
+                            <svg class="w-12 h-12 text-yellow-600 mb-4 mx-auto" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v1H3V4zm0 2h14v11a1 1 0 01-1 1H4a1 1 0 01-1-1V6z">
+                                </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Telepon</h3>
+                            <p class="text-gray-600">+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <!-- Contact Card 3 -->
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div
+                            class="bg-white shadow-xl rounded-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-200">
+                            <svg class="w-12 h-12 text-yellow-600 mb-4 mx-auto" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.003 4.284a.75.75 0 01.708-.627h14.586a.75.75 0 01.708.627l2.446 11.744A.75.75 0 0119.014 17H5.986a.75.75 0 01-.741-.627L2.003 4.284z">
+                                </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Email</h3>
+                            <p class="text-gray-600">info@hci.id</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="bg-gradient-to-r from-yellow-100 to-yellow-300 py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-semibold text-center mb-8">Formulir Kontak</h2>
+                    <div class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg border border-gray-200">
+                        <form action="#" method="post">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 text-sm font-semibold mb-2">Nama</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-yellow-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-yellow-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message"
+                                    class="block text-gray-700 text-sm font-semibold mb-2">Pesan</label>
+                                <textarea id="message" name="message" rows="4"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-yellow-500"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="bg-yellow-500 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-yellow-600 transition-colors">Kirim
+                                Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="relative bg-[#2D2D2D] text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="h-screen w-full bg-cover bg-center"
+                    style="background-image: url('./footer.jpg'); background-attachment: fixed;"></div>
+            </div>
+            <div class="relative h-200 z-10 container mx-auto px-6 pt-12">
+                <div class="flex flex-wrap -mx-4">
+                    <!-- Kolom 1: Logo -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <div class="flex items-center">
+                            <img src="./logo-remove.png" alt="Logo" class="w-32 h-auto">
+                        </div>
+                        <p class="text-gray-400">Innovating technology for a brighter future.</p>
+                    </div>
+
+                    <!-- Kolom 2: Menu Navigasi -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Menu</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Home</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">About Us</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Services</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kolom 3: Logo Pembayaran -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Payment</h3>
+                        <div class="flex flex-wrap space-x-4">
+                            <img src="BRI.jpeg" alt="Payment Method 1" class="w-12 h-auto">
+                            <img src="DANA.jpeg" alt="Payment Method 2" class="w-12 h-auto">
+                            <img src="BCA.png" alt="Payment Method 2" class="w-12 h-auto">                            
+                        </div>
+                    </div>
+
+                    <!-- Kolom 4: Informasi Kontak -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Contact Us</h3>
+                        <p class="text-gray-300">Email: <a href="mailto:info@hci.id"
+                                class="text-yellow-400 hover:underline">hanifamacode@gmail.com</a></p>
+                        <p class="text-gray-300">Phone: <a href="tel:+6281234567890"
+                                class="text-yellow-400 hover:underline">+62 8888 200 925</a></p>
+                        <p class="text-gray-300">Address: Kiaracondong, Kota Bandung, Jawa Barat, Indonesia.</p>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div class="pt-6 text-center text-gray-400 text-sm mt-auto">
+                    <div class="border-b border-gray-700 pb-6 mb-4">
+                        <a href="path/to/brosur.pdf" download
+                            class="inline-block px-6 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors">
+                            Download Brosur
+                        </a>
+                    </div>
+                    <p class="mb-4">©2024 CV. Hanifama Code Integration. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>

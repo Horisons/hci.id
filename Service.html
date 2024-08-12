@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jasa Digital Marketing | Service</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <style>
+        .accordion-content {
+            display: none;
+        }
+
+        .accordion-content.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal ">
+    <main id="content">
+
+        <header
+            class="w-full mx-auto flex justify-between items-center py-3 bg-gray-100 dark:bg-transparent fixed w-full z-50 border-b border-gray-300 dark:border-gray-700 dark:bg-[#121212]">
+            <div class="flex items-center pl-5">
+                <div class="Avatar">
+                    <img src="logo.png" alt="avatar"
+                        class="w-14 max-[375px]:w-10 max-[769px]:w-11 rounded-full shadow-lg" loading="lazy">
+                </div>
+                <div class="ml-2 text-gray-900 dark:text-[#fafafa]">
+                    <h1 class="font-sora font-medium max-[375px]:text-[12px] max-[600px]:text-[14px]">HCI.ID</h1>
+                    <h2 class="font-sora font-normal text-xs max-[375px]:text-[11px] max-[600px]:text-[12px]">Digital
+                        Marketing</h2>
+                </div>
+                <div><img class="w-[14px] ml-[5px] mb-[17px] max-[375px]:w-3" src="verified.png" alt="verified"
+                        loading="lazy"></div>
+            </div>
+
+            <nav id="nav-menu" class="hidden lg:flex">
+                <ul id="nav-links"
+                    class="flex items-center gap-12 text-sm font-normal text-[#121212] dark:text-[#e5e5e5]">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <div class="relative pr-5">
+                    <select id="language-toggle"
+                        class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white p-2 rounded flex items-center gap-2">
+                        <option value="en" class="bg-[url('/path/to/uk-flag.png')] bg-no-repeat pl-8">English</option>
+                        <option value="id" class="bg-[url('/path/to/id-flag.png')] bg-no-repeat pl-8">Bahasa Indonesia
+                        </option>
+                    </select>
+                </div>
+                <div class="pr-5 hidden lg:block">
+                    <input type="checkbox" class="hidden" id="dark-toggle">
+                    <label for="dark-toggle" class="cursor-pointer">
+                        <div
+                            class="flex h-6 w-11 items-center rounded-full bg-gradient-to-r from-[#ADD8E6] via-[#ADD8E6] to-[#66CCFF] p-[3px] dark:from-[#000080] dark:to-[#ADD8E6]">
+                            <div class="toggle-circle h-5 w-5 rounded-full bg-white transition-transform duration-300">
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <button aria-label="hamburger" id="hamburger" class="block lg:hidden">
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                    <span class="hamburger-line bg-[#121212] dark:bg-[#fafafa] block w-[27px] h-[3px] my-[3px]"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Icon at Bottom -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white lg:hidden z-50">
+            <div class="flex justify-around items-center h-16">
+                <a href="/" aria-label="home" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l9-9m0 0l9 9m-9-9v18" />
+                    </svg>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a href="about.html" aria-label="about" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5.121 19.121a4 4 0 010-5.656L12 6.586l6.879 6.879a4 4 0 010 5.656A4 4 0 0116 21H8a4 4 0 01-2.879-1.879z" />
+                    </svg>
+                    <span class="text-xs">About</span>
+                </a>
+                <a href="service.html" aria-label="service" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9.75 17.25a5.75 5.75 0 104.5 0" />
+                    </svg>
+                    <span class="text-xs">Service</span>
+                </a>
+                <a href="project.html" aria-label="project" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    <span class="text-xs">Project</span>
+                </a>
+                <a href="contact.html" aria-label="contact" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12a9 9 0 11-9-9 9 9 0 019 9z" />
+                    </svg>
+                    <span class="text-xs">Contact</span>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Full Width Card with ABOUT US -->
+        <div class="flex items-center justify-center w-full h-80 bg-yellow-500 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-75"></div>
+            <div
+                class="absolute top-0 left-0 w-32 h-32 bg-yellow-700 rounded-full transform -translate-x-1/2 -translate-y-1/2 opacity-30">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-40 h-40 bg-yellow-700 rounded-full transform translate-x-1/2 translate-y-1/2 opacity-30">
+            </div>
+            <h2 class="relative text-4xl font-bold text-center text-white z-10">LAYANAN</h2>
+
+            <!-- Additional Decorative Elements -->
+            <div
+                class="absolute top-0 right-0 w-24 h-24 bg-yellow-600 rounded-full transform translate-x-1/4 -translate-y-1/4 opacity-20">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-24 h-24 bg-yellow-600 rounded-full transform -translate-x-1/4 translate-y-1/4 opacity-20">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 w-48 h-48 bg-white rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div class="absolute top-1/4 right-1/4 w-16 h-16 bg-yellow-800 rounded-full transform rotate-45 opacity-25">
+            </div>
+
+            <!-- Star Decorations -->
+            <div class="absolute top-8 left-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute top-8 right-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute bottom-8 left-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute bottom-8 right-8">
+                <svg class="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 15l-5.878 3.09 1.122-6.536L0 7.18l6.645-.964L10 0l3.355 6.216L20 7.18l-5.242 4.374 1.122 6.536z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <main class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold mb-4 border-b-4 border-yellow-500 inline-block pb-2">Apa yang Kami
+                    Tawarkan</h2>
+                <p class="text-lg text-gray-600">Pilih paket yang sesuai dengan kebutuhan bisnis Anda.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Service Package 1 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white shadow-lg rounded-lg p-6 text-left border-t-4 border-yellow-500">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Paket Pedagang</h3>
+                        <p class="text-gray-600 mb-4">Sempurnakan bisnis Anda dengan solusi dasar namun efektif.</p>
+                        <div class="mb-4">
+                            <p class="text-2xl font-bold text-gray-800">Rp. 1.000.000</p>
+                            <div class="mb-4">
+                                <p class="text-gray-600 mb-2">Termasuk:</p>
+                                <ul class="list-disc list-inside text-gray-600 ml-5 space-y-2">
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Desain Situs Web Dasar
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Layout Responsif
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✗</span> Sistem Manajemen Konten
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✗</span> Optimasi SEO Dasar
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✗</span> Support 6 Bulan
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="text-yellow-500 font-semibold hover:underline">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Package 2 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white shadow-lg rounded-lg p-6 text-left border-t-4 border-yellow-500">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Paket Juragan</h3>
+                        <p class="text-gray-600 mb-4">Dapatkan fitur tambahan untuk mendukung bisnis yang lebih besar
+                            dan kompleks.</p>
+                        <div class="mb-4">
+                            <p class="text-2xl font-bold text-gray-800">Rp. 2.000.000</p>
+                            <div class="mb-4">
+                                <p class="text-gray-600 mb-2">Termasuk:</p>
+                                <ul class="list-disc list-inside text-gray-600 ml-5 space-y-2">
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Desain Situs Web Kustom
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Layout Responsif
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Sistem Manajemen Konten Lanjutan
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Optimasi SEO Lengkap
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✗</span> Integrasi E-Commerce
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Support 1 Tahun
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="text-yellow-500 font-semibold hover:underline">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Package 3 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white shadow-lg rounded-lg p-6 text-left border-t-4 border-yellow-500">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Paket Bos Besar</h3>
+                        <p class="text-gray-600 mb-4">Solusi lengkap untuk bisnis yang ingin meraih kesuksesan online
+                            maksimal.</p>
+                        <div class="mb-4">
+                            <p class="text-2xl font-bold text-gray-800">Rp. 4.000.000</p>
+                            <div class="mb-4">
+                                <p class="text-gray-600 mb-2">Termasuk:</p>
+                                <ul class="list-disc list-inside text-gray-600 ml-5 space-y-2">
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Desain Situs Web Premium
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Layout Responsif dan Kustom
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Sistem Manajemen Konten Full-Featured
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Optimasi SEO Lengkap dan Laporan Berkala
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Integrasi E-Commerce dan Fitur Tambahan
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Support Prioritas 2 Tahun
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-6 text-center">✓</span> Strategi Pemasaran Digital
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="text-yellow-500 font-semibold hover:underline">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FAQ Section -->
+        <main class="container mx-auto px-4 py-16">
+            <div class="flex justify-center">
+                <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl w-full">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-semibold mb-4 border-b-4 border-yellow-500 inline-block pb-2">Proses
+                            Pembuatan Website di HCI.ID</h2>
+                        <p class="text-lg text-gray-600">Ikuti empat langkah mudah untuk mendapatkan situs web yang
+                            berkualitas dan sesuai dengan kebutuhan Anda.</p>
+                    </div>
+                    <div class="flex flex-wrap -mx-4">
+                        <!-- Accordion Item 1 -->
+                        <div class="w-full px-4 mb-4">
+                            <button
+                                class="w-full text-left bg-white border border-gray-300 rounded-lg p-4 shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                onclick="toggleAccordion('item1')">
+                                <h3 class="text-2xl font-semibold text-gray-800">1. Mockup</h3>
+                            </button>
+                            <div id="item1" class="hidden mt-2 bg-gray-100 p-4 rounded-lg">
+                                <p class="text-gray-600">Kami mulai dengan merancang mockup yang memvisualisasikan
+                                    tampilan dan tata letak situs web Anda. Ini membantu Anda melihat desain awal
+                                    sebelum tahap pengembangan dimulai.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 2 -->
+                        <div class="w-full px-4 mb-4">
+                            <button
+                                class="w-full text-left bg-white border border-gray-300 rounded-lg p-4 shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                onclick="toggleAccordion('item2')">
+                                <h3 class="text-2xl font-semibold text-gray-800">2. Proses Development</h3>
+                            </button>
+                            <div id="item2" class="hidden mt-2 bg-gray-100 p-4 rounded-lg">
+                                <p class="text-gray-600">Tim kami akan mengembangkan situs web Anda berdasarkan mockup
+                                    yang telah disetujui. Kami memastikan semua fitur dan fungsionalitas berjalan dengan
+                                    baik dan sesuai dengan standar industri.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 3 -->
+                        <div class="w-full px-4 mb-4">
+                            <button
+                                class="w-full text-left bg-white border border-gray-300 rounded-lg p-4 shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                onclick="toggleAccordion('item3')">
+                                <h3 class="text-2xl font-semibold text-gray-800">3. Testing</h3>
+                            </button>
+                            <div id="item3" class="hidden mt-2 bg-gray-100 p-4 rounded-lg">
+                                <p class="text-gray-600">Kami melakukan uji coba menyeluruh pada situs web Anda untuk
+                                    memastikan bahwa semuanya berjalan lancar. Ini termasuk pengujian fungsionalitas,
+                                    kompatibilitas perangkat, dan kecepatan situs.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 4 -->
+                        <div class="w-full px-4 mb-4">
+                            <button
+                                class="w-full text-left bg-white border border-gray-300 rounded-lg p-4 shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                onclick="toggleAccordion('item4')">
+                                <h3 class="text-2xl font-semibold text-gray-800">4. Delivery</h3>
+                            </button>
+                            <div id="item4" class="hidden mt-2 bg-gray-100 p-4 rounded-lg">
+                                <p class="text-gray-600">Setelah semua langkah selesai, kami akan menyerahkan situs web
+                                    kepada Anda. Kami juga menyediakan pelatihan dan dukungan untuk memastikan Anda
+                                    dapat mengelola situs web dengan mudah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Parallax Section -->
+        <main class="relative overflow-hidden">
+            <div class="relative z-10 text-center py-16 bg-gray-100">
+                <h2 class="text-3xl font-semibold mb-4">Mengapa Perlu Jasa Pembuatan Website?</h2>
+                <p class="text-lg text-gray-600">Temukan alasan mengapa jasa pembuatan website kami adalah pilihan
+                    terbaik untuk Anda.</p>
+            </div>
+            <div class="absolute inset-0 bg-gray-200 bg-fixed bg-cover bg-center h-screen"
+                style="background-image: url('./elegan.jpg');"></div>
+            <div class="relative z-10 py-16 h-screen">
+                <div class="relative flex flex-wrap justify-center">
+                    <!-- Garis Lengkung -->
+                    <svg class="absolute inset-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+                        <path d="M0 100 Q600 0 1200 100 T2400 100 V300 H0 Z" fill="rgba(255, 255, 255, 0.1)" />
+                    </svg>
+                    <!-- Reason 1 -->
+                    <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                        <div class="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+                            <div class="bg-yellow-500 p-4 text-white text-center">
+                                <h3 class="text-xl font-semibold">Profesionalisme dan Kesan Pertama</h3>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600">Website yang dirancang secara profesional memberikan kesan
+                                    pertama yang baik kepada pengunjung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reason 2 -->
+                    <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                        <div class="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+                            <div class="bg-yellow-500 p-4 text-white text-center">
+                                <h3 class="text-xl font-semibold">Optimasi untuk Mesin Pencari</h3>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600">Jasa pembuatan website mencakup SEO dasar yang membantu situs
+                                    Anda lebih mudah ditemukan di mesin pencari.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reason 3 -->
+                    <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                        <div class="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+                            <div class="bg-yellow-500 p-4 text-white text-center">
+                                <h3 class="text-xl font-semibold">Dukungan dan Pemeliharaan</h3>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600">Dengan menggunakan jasa pembuatan website, Anda mendapatkan
+                                    dukungan teknis dan pemeliharaan yang memastikan website Anda selalu dalam kondisi
+                                    optimal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Trust and Reliability Section -->
+        <main class="relative container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold mb-4 border-b-4 border-yellow-500 inline-block pb-2">Apakah Jasa
+                    Pembuatan Website HCI.ID Bisa Dipercaya?</h2>
+                <p class="text-lg text-gray-600">Kami bangga akan reputasi kami dan komitmen terhadap kualitas. Berikut
+                    adalah beberapa alasan mengapa Anda bisa mempercayai kami.</p>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+                <!-- Garis Koneksi -->
+                <svg class="absolute inset-0 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                    <path d="M100 200 Q400 100 700 200 T1300 200" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2"
+                        fill="none" />
+                </svg>
+                <!-- Trust Factor 1 -->
+                <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8 z-10">
+                    <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md relative">
+                        <div
+                            class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-500 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3M5 12h14a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">1. Pengalaman dan Keahlian</h3>
+                        <p class="text-gray-600">Tim kami terdiri dari profesional berpengalaman dengan keahlian dalam
+                            berbagai bidang pembuatan website dan pengembangan digital.</p>
+                    </div>
+                </div>
+                <!-- Trust Factor 2 -->
+                <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8 z-10">
+                    <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md relative">
+                        <div
+                            class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-500 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12h.01M19 12h.01M12 5v1m0 12v1m6-6h1m-12 0h1m0 0h1m0-1h1m0 1h1m0-1h1m0 1h1m0-1h1m0-1h1m0 1h1m0-1h1m0-1h1m0 1h1m0-1h1" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">2. Testimoni Klien</h3>
+                        <p class="text-gray-600">Kami telah melayani banyak klien yang puas dengan layanan kami.
+                            Testimoni positif dari klien kami adalah bukti kepercayaan mereka kepada kami.</p>
+                    </div>
+                </div>
+                <!-- Trust Factor 3 -->
+                <div class="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-8 z-10">
+                    <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md relative">
+                        <div
+                            class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-500 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">3. Sertifikasi dan Penghargaan</h3>
+                        <p class="text-gray-600">Kami memiliki sertifikasi dan penghargaan dari industri yang
+                            menunjukkan komitmen kami terhadap kualitas dan keahlian.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="relative bg-[#2D2D2D] text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="h-screen w-full bg-cover bg-center"
+                    style="background-image: url('./footer.jpg'); background-attachment: fixed;"></div>
+            </div>
+            <div class="relative h-200 z-10 container mx-auto px-6 pt-12">
+                <div class="flex flex-wrap -mx-4">
+                    <!-- Kolom 1: Logo -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <div class="flex items-center">
+                            <img src="./logo-remove.png" alt="Logo" class="w-32 h-auto">
+                        </div>
+                        <p class="text-gray-400">Innovating technology for a brighter future.</p>
+                    </div>
+
+                    <!-- Kolom 2: Menu Navigasi -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Menu</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Home</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">About Us</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Services</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kolom 3: Logo Pembayaran -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Payment</h3>
+                        <div class="flex flex-wrap space-x-4">
+                            <img src="BRI.jpeg" alt="Payment Method 1" class="w-12 h-auto">
+                            <img src="DANA.jpeg" alt="Payment Method 2" class="w-12 h-auto">
+                            <img src="BCA.png" alt="Payment Method 2" class="w-12 h-auto">                            
+                        </div>
+                    </div>
+
+                    <!-- Kolom 4: Informasi Kontak -->
+                    <div class="w-full md:w-1/4 px-4 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">Contact Us</h3>
+                        <p class="text-gray-300">Email: <a href="mailto:info@hci.id"
+                                class="text-yellow-400 hover:underline">info@hci.id</a></p>
+                        <p class="text-gray-300">Phone: <a href="tel:+6281234567890"
+                                class="text-yellow-400 hover:underline">+62 812 3456 7890</a></p>
+                        <p class="text-gray-300">Address: Jalan Raya No. 123, Kota Bandung, Indonesia</p>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div class="pt-6 text-center text-gray-400 text-sm mt-auto">
+                    <div class="border-b border-gray-700 pb-6 mb-4">
+                        <a href="path/to/brosur.pdf" download
+                            class="inline-block px-6 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors">
+                            Download Brosur
+                        </a>
+                    </div>
+                    <p class="mb-4">©2024 CV. Hanifama Code Integration. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+<script>
+    function toggleAccordion(id) {
+        var content = document.getElementById(id);
+        if (content.classList.contains('show')) {
+            content.classList.remove('show');
+        } else {
+            // Hide all accordion items
+            var allContents = document.querySelectorAll('.accordion-content');
+            allContents.forEach(function (item) {
+                item.classList.remove('show');
+            });
+            // Show the clicked accordion item
+            content.classList.add('show');
+        }
+    }
+</script>
+
+</html>
